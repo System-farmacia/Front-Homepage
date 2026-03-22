@@ -187,6 +187,8 @@ h2 {
     margin-top: 30px;
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .produto{
@@ -198,6 +200,7 @@ h2 {
     text-align: center;
     border-radius: 5%;
     max-width: 200px;
+        box-shadow: #7e8088 1px 2px 7px;
 
 }
 
@@ -211,7 +214,38 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.teste{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.desconto {
+    background-color: #a30229;
+    font-size: 0.8rem;
+    height: 10px;
+    width: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+}
+
+.container-produtos p.desconto {
+    color: #ffffff;
+    text-align: justify;
+    margin: 0;
+    padding: 5px;
+    font-weight: 600; /* Peso da fonte do desconto */
+}
+
+
 .container-produtos p{
+    margin-top: 30px;
     color: #319b3f;
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
