@@ -228,147 +228,198 @@ h2 {
     cursor: pointer;
 }
 
-/*FOOTER*/
-footer{
+.btn:hover{
+    opacity: 0.8;
+    transition: 0.3s ease-in-out;
+}
+
+/* Banner propaganda */
+.container-propaganda{
+    margin-top: 30px;
+    background-color: #f9fafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner-img-propaganda{
+    padding: 12px;
+    background-color: #bebfc4;
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
     width: 100%;
-    color: #f9fafb;
+    object-fit: contain;
+}
+.banner-img-propaganda img{
+    width: 100%; /* Ajuste conforme o tamanho desejado */
+    height: 200px;
+    object-fit: contain; /* Ajuste conforme o tamanho desejado, se apagar a img pega o container todo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-propaganda{
+    font-size: 0.60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    color: #1E2842;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-propaganda:hover{
+    opacity: 0.8;
+    transition: 0.3s ease-in-out;
+}
+/*FOOTER*/ 
+footer{  
+    width: 100%; /* Faz o rodapé ocupar toda a largura da tela */
+    color: #f9fafb; /* Define a cor do texto dentro do rodapé (um tom claro) */
 }
 
 .footer-link{
-    text-decoration: none;
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
 }
 
 .footer-container{
-    background-color: #1E2842;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 3rem 3.5rem;
+    background-color: #1E2842; /* Define a cor de fundo do rodapé*/
+    display: grid; /* Organiza os elementos em forma de grade */
+    grid-template-columns: repeat(4, 1fr); /* Divide em 4 colunas iguais */
+    padding: 3rem 3.5rem; /* Espaçamento interno (em cima/baixo 3rem, lados 3.5rem) */
 }
 
 .footer-contacts img{
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.75rem; /* Dá espaço abaixo das imagens de contato */
 }
 
 .footer-socialmidia{
-    display: flex;
-    gap: 2rem;
-    margin-top: 1.5rem;
+    display: flex; /* Organiza os ícones em linha */
+    gap: 2rem; /* Espaço entre os ícones */
+    margin-top: 1.5rem; /* Espaço acima do bloco de ícones */
 }
 
 .footer-socialmidia .footer-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.5rem;
-    width: 2.5rem;
-    color: #f9fafb;
-    border-radius: 50%;
-    transition: all 0.4s;
+    display: flex; 
+    align-items: center; /* Centraliza o ícone verticalmente */
+    justify-content: center; /* Centraliza o ícone horizontalmente */
+    height: 2.5rem; /* Altura do botão/ícone */
+    width: 2.5rem; /* Largura do botão/ícone */
+    color: #f9fafb; /* Cor do ícone*/
+    border-radius: 50%; /* Deixa o botão redondo */
+    transition: all 0.4s; /* Faz animações suaves em 0.4 segundos */
 }
 
 .footer-socialmidia .footer-link i{
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Define o tamanho do ícone dentro do botão */
 }
 
 .footer-socialmidia .footer-link:hover{
-    opacity: 0.8;
+    opacity: 0.8; /* Quando passa o mouse, o botão fica levemente transparente */
 }
 
 #instagram{
-    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807); /* Fundo colorido em degradê para o botão do Instagram */
 }
 
 #github{
-    background-color: #4267b3;
+    background-color: #4267b3; /* Fundo azul para o botão do GitHub */
 }
 
 #whatsapp{
-    background-color: #25d366;
+    background-color: #25d366; /* Fundo verde para o botão do WhatsApp */
 }
 
 .footer-list{
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    list-style: none;
+    display: flex; /* Organiza os itens em linha flexível */
+    flex-direction: column; /* Coloca os itens em coluna (um embaixo do outro) */
+    gap: 0.75rem; /* Espaço entre os itens da lista */
+    list-style: none; /* Remove as bolinhas padrão da lista */
 }
 
 .footer-list .footer-link{
-    color: #f9fafb;
-    transition: all 0.4s;
+    color: #f9fafb; /* Cor clara para os links */
+    transition: all 0.4s; /* Animação suave ao mudar de cor */
 }
 
 .footer-list .footer-link:hover{
-    color:#25d366;
+    color:#25d366; /* Quando passa o mouse, o link fica verde */
 }
 
 .footer-feedback{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    display: flex; /* Organiza os elementos em linha flexível */
+    flex-direction: column; /* Coloca os elementos em coluna */
+    gap: 1.5rem; /* Espaço entre os elementos */
 }
 
 .input-group{
-    background-color: #f9fafb;
-    display: flex;
-    align-items: center;
-    border-radius: 4px;
-    color: #0c111b;
+    background-color: #f9fafb; /* Fundo branco para o campo de entrada */
+    display: flex; /* Organiza o campo e o botão em linha */
+    align-items: center; /* Centraliza verticalmente */
+    border-radius: 4px; /* Bordas levemente arredondadas */
+    color: #0c111b; /* Cor do texto dentro do campo */
 }
 
 .input-group input{
-    all: unset;
-    padding: 0.75rem;
-    width: 100%;
+    all: unset; /* Remove todas as configurações padrão do input */
+    padding: 0.75rem; /* Espaço interno dentro do campo */
+    width: 100%; /* Faz o campo ocupar toda a largura disponível */
 }
 
 .input-group button{
-    background-color: #319b3f;
-    border: none;
-    color: #f9fafb;
-    padding: 0px 1.25rem;
-    height: 100%;
-    border-radius: 0px 6px 6px 0px;
-    transition: all 0.4s;
+    background-color: #319b3f; /* Fundo verde para o botão */
+    border: none; /* Remove a borda padrão */
+    color: #f9fafb; /* Cor do texto do botão (clara) */
+    padding: 0px 1.25rem; /* Espaço interno (sem em cima/baixo, 1.25rem nos lados) */
+    height: 100%; /* Faz o botão ter a mesma altura do campo */
+    border-radius: 0px 6px 6px 0px; /* Bordas arredondadas só no lado direito */
+    transition: all 0.4s; /* Animação suave ao interagir */
 }
 
 .input-group button:hover{
-    opacity: 0.8;
+    opacity: 0.8; /* Botão fica levemente transparente ao passar o mouse */
 }
 
 .footer-copyright{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #0c111b;
-    font-size: 0.75rem;
-    padding: 1.5rem;
-    font-weight: 100;
+    display: flex; /* Organiza os elementos em linha flexível */
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    background-color: #0c111b; /* Fundo bem escuro */
+    font-size: 0.75rem; /* Texto pequeno */
+    padding: 1.5rem; /* Espaço interno */
+    font-weight: 100; /* Texto bem fino */
 }
 
 @media screen and (max-width: 768px){
     .footer-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr); /* Em telas menores, divide em 2 colunas */
+        gap: 2rem; /* Espaço entre as colunas */
     }
 }
 
 @media screen and (max-width: 426px){
     .footer-container {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 3rem, 2rem;
+        grid-template-columns: repeat(1, 1fr); /* Em telas bem pequenas, só 1 coluna */
+        padding: 3rem, 2rem; /* Espaçamento interno (mas aqui tem um erro: deveria ser espaço, não vírgula) */
     }
 }
+
 /*RESPONSIVIDADE*/
 @media (max-width: 750px) {
     li, a, button {
-        font-size: 12px; /* Tamanho da fonte para telas menores */
+        font-size: 12px; /* Diminui o tamanho da fonte em telas menores */
     }
 
     .logotipo {
-        font-size: 24px; /* Tamanho da fonte do logotipo para telas menores */
+        font-size: 24px; /* Diminui o tamanho da fonte do logotipo em telas menores */
     }
-    
 }
-
